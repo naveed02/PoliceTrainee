@@ -1,0 +1,24 @@
+D:\dotnet files\sourcegrids\sourcegird4.9\SourceGrid4_9\SourceGrid4_9\SourceGrid.Extensions\bin\Debug\SourceGrid.Extensions.dll
+D:\dotnet files\sourcegrids\sourcegird4.9\SourceGrid4_9\SourceGrid4_9\SourceGrid.Extensions\bin\Debug\SourceGrid.Extensions.pdb
+D:\dotnet files\sourcegrids\sourcegird4.9\SourceGrid4_9\SourceGrid4_9\SourceGrid.Extensions\bin\Debug\DevAge.Core.dll
+D:\dotnet files\sourcegrids\sourcegird4.9\SourceGrid4_9\SourceGrid4_9\SourceGrid.Extensions\bin\Debug\DevAge.Windows.Forms.dll
+D:\dotnet files\sourcegrids\sourcegird4.9\SourceGrid4_9\SourceGrid4_9\SourceGrid.Extensions\bin\Debug\SourceGrid.dll
+D:\dotnet files\sourcegrids\sourcegird4.9\SourceGrid4_9\SourceGrid4_9\SourceGrid.Extensions\bin\Debug\SourceGrid.pdb
+D:\dotnet files\sourcegrids\sourcegird4.9\SourceGrid4_9\SourceGrid4_9\SourceGrid.Extensions\bin\Debug\DevAge.Core.xml
+D:\dotnet files\sourcegrids\sourcegird4.9\SourceGrid4_9\SourceGrid4_9\SourceGrid.Extensions\bin\Debug\DevAge.Windows.Forms.xml
+D:\dotnet files\sourcegrids\sourcegird4.9\SourceGrid4_9\SourceGrid4_9\SourceGrid.Extensions\obj\Debug\SourceGrid.Extensions.csprojResolveAssemblyReference.cache
+D:\dotnet files\sourcegrids\sourcegird4.9\SourceGrid4_9\SourceGrid4_9\SourceGrid.Extensions\obj\Debug\SourceGrid.ListEditor.resources
+D:\dotnet files\sourcegrids\sourcegird4.9\SourceGrid4_9\SourceGrid4_9\SourceGrid.Extensions\obj\Debug\SourceGrid.Planning.PlanningGrid.resources
+D:\dotnet files\sourcegrids\sourcegird4.9\SourceGrid4_9\SourceGrid4_9\SourceGrid.Extensions\obj\Debug\SourceGrid.Extensions.csproj.GenerateResource.Cache
+D:\dotnet files\sourcegrids\sourcegird4.9\SourceGrid4_9\SourceGrid4_9\SourceGrid.Extensions\obj\Debug\SourceGrid.Extensions.dll
+D:\dotnet files\sourcegrids\sourcegird4.9\SourceGrid4_9\SourceGrid4_9\SourceGrid.Extensions\obj\Debug\SourceGrid.Extensions.pdb
+F:\SVN\ComsatProj\trunk\GUI_Task\SourceGrid.Extensions\bin\Debug\SourceGrid.Extensions.dll
+F:\SVN\ComsatProj\trunk\GUI_Task\SourceGrid.Extensions\bin\Debug\SourceGrid.Extensions.pdb
+F:\SVN\ComsatProj\trunk\GUI_Task\SourceGrid.Extensions\bin\Debug\SourceGrid.dll
+F:\SVN\ComsatProj\trunk\GUI_Task\SourceGrid.Extensions\bin\Debug\SourceGrid.pdb
+F:\SVN\ComsatProj\trunk\GUI_Task\SourceGrid.Extensions\obj\Debug\SourceGrid.Extensions.csprojResolveAssemblyReference.cache
+F:\SVN\ComsatProj\trunk\GUI_Task\SourceGrid.Extensions\obj\Debug\SourceGrid.ListEditor.resources
+F:\SVN\ComsatProj\trunk\GUI_Task\SourceGrid.Extensions\obj\Debug\SourceGrid.Planning.PlanningGrid.resources
+F:\SVN\ComsatProj\trunk\GUI_Task\SourceGrid.Extensions\obj\Debug\SourceGrid.Extensions.csproj.GenerateResource.Cache
+F:\SVN\ComsatProj\trunk\GUI_Task\SourceGrid.Extensions\obj\Debug\SourceGrid.Extensions.dll
+F:\SVN\ComsatProj\trunk\GUI_Task\SourceGrid.Extensions\obj\Debug\SourceGrid.Extensions.pdb

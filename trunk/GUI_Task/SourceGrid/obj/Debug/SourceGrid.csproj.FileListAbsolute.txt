@@ -1,0 +1,13 @@
+D:\dotnet files\sourcegrids\sourcegird4.9\SourceGrid4_9\SourceGrid4_9\SourceGrid\bin\Debug\SourceGrid.dll
+D:\dotnet files\sourcegrids\sourcegird4.9\SourceGrid4_9\SourceGrid4_9\SourceGrid\bin\Debug\SourceGrid.pdb
+D:\dotnet files\sourcegrids\sourcegird4.9\SourceGrid4_9\SourceGrid4_9\SourceGrid\bin\Debug\DevAge.Core.dll
+D:\dotnet files\sourcegrids\sourcegird4.9\SourceGrid4_9\SourceGrid4_9\SourceGrid\bin\Debug\DevAge.Windows.Forms.dll
+D:\dotnet files\sourcegrids\sourcegird4.9\SourceGrid4_9\SourceGrid4_9\SourceGrid\bin\Debug\DevAge.Core.xml
+D:\dotnet files\sourcegrids\sourcegird4.9\SourceGrid4_9\SourceGrid4_9\SourceGrid\bin\Debug\DevAge.Windows.Forms.xml
+D:\dotnet files\sourcegrids\sourcegird4.9\SourceGrid4_9\SourceGrid4_9\SourceGrid\obj\Debug\SourceGrid.csprojResolveAssemblyReference.cache
+D:\dotnet files\sourcegrids\sourcegird4.9\SourceGrid4_9\SourceGrid4_9\SourceGrid\obj\Debug\SourceGrid.dll
+D:\dotnet files\sourcegrids\sourcegird4.9\SourceGrid4_9\SourceGrid4_9\SourceGrid\obj\Debug\SourceGrid.pdb
+F:\SVN\ComsatProj\trunk\GUI_Task\SourceGrid\bin\Debug\SourceGrid.dll
+F:\SVN\ComsatProj\trunk\GUI_Task\SourceGrid\bin\Debug\SourceGrid.pdb
+F:\SVN\ComsatProj\trunk\GUI_Task\SourceGrid\obj\Debug\SourceGrid.dll
+F:\SVN\ComsatProj\trunk\GUI_Task\SourceGrid\obj\Debug\SourceGrid.pdb
