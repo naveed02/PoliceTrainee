@@ -162,12 +162,12 @@ namespace GUI_Task
 
             else if (e.KeyCode == Keys.Right)
             {
-                btnNextRec_Click(sender, e);
+               // btnNextRec_Click(sender, e);
             }
 
             else if (e.KeyCode == Keys.Left)
             {
-                btnPrevRec_Click(sender, e);
+               // btnPrevRec_Click(sender, e);
             }
 
 
@@ -1135,7 +1135,7 @@ namespace GUI_Task
             tSQL += " INNER JOIN CatDtl m ON l.MartialStatusId = m.cgdCode AND m.cgCode = 7";
             tSQL += " INNER JOIN CatDtl c ON l.CourseId = c.cgdCode AND c.cgCode = 8 INNER JOIN Batches ba ON l.BatchID = ba.BatchID ";
             tSQL += " INNER JOIN CatDtl ar ON l.AppRankId = ar.cgdCode AND ar.cgCode = 14 ";
-            tSQL += " WHERE CapNo = " + nextRec.ToString() + " AND l.CourseId = " + cboCourseSelection.SelectedValue.ToString() + "";
+            tSQL += " WHERE CapNo = " + nextRec.ToString() + " AND l.CourseId = " + cboCourseSelection.SelectedValue.ToString() + " AND l.BatchID = " + cboBatchName.SelectedValue.ToString();
             tSQL += " ORDER BY CapNo ";
 
             try
@@ -1356,7 +1356,7 @@ namespace GUI_Task
             tSQL += " INNER JOIN CatDtl c ON l.CourseId = c.cgdCode AND c.cgCode = 8 INNER JOIN Batches ba ON l.BatchID = ba.BatchID ";
             tSQL += " INNER JOIN CatDtl ar ON l.AppRankId = ar.cgdCode AND ar.cgCode = 14 ";
 
-            tSQL += " WHERE CapNo = " + PrevRec.ToString() + " AND l.CourseId = " + cboCourseSelection.SelectedValue.ToString() + "";
+            tSQL += " WHERE CapNo = " + PrevRec.ToString() + " AND l.CourseId = " + cboCourseSelection.SelectedValue.ToString() + " AND l.BatchID = " + cboBatchName.SelectedValue.ToString();
             tSQL += " ORDER BY CapNo ";
 
             try

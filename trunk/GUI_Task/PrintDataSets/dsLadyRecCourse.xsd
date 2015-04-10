@@ -15,7 +15,7 @@
                     <CommandText>SELECT        l.ID, l.Name, l.FatherName, l.BeltNo, l.CapNo, l.DOB, l.CNICNo, l.MobileNo, l.Illness, l.Address, l.EmergencyContact, l.CourseDuration, l.FromDate, l.ToDate, l.CoursePeriod, l.Absence, l.Leave, l.LongWeekend, 
                          l.ShortLeave, l.CourtApperance, l.Outdoor, l.Indoor, l.MedicalRest, l.PunishReward, l.SpecialAss, g.cgdDesc AS Gender, d.cgdDesc AS DistrictName, c.cgdDesc AS CourseName, r.cgdDesc AS RankName, 
                          e.cgdDesc AS EducationName, a.cgdDesc AS AppRankName, b.cgdDesc AS BloodGroupName, m.cgdDesc AS MartialStatusName, l.DOApp, l.ShortWeekend, l.PreviousOR, d.cgCode, d.cgdCode, l.CourseId, 
-                         l.EducationId, l.MartialStatusId, l.BloodGroupId, l.DistrictId, l.RankId, l.GenderId, l.Picture, CASE WHEN isRTU = 1 THEN 'RTU' ELSE NULL END AS RTU, l.AppRankId
+                         l.EducationId, l.MartialStatusId, l.BloodGroupId, l.DistrictId, l.RankId, l.GenderId, l.Picture, CASE WHEN isRTU = 1 THEN 'RTU' ELSE NULL END AS RTU, l.AppRankId, ba.BatchName
 FROM            RecruitCourse AS l INNER JOIN
                          CatDtl AS g ON l.GenderId = g.cgdCode AND g.cgCode = 1 INNER JOIN
                          CatDtl AS d ON l.DistrictId = d.cgdCode AND d.cgCode = 2 INNER JOIN
@@ -24,7 +24,8 @@ FROM            RecruitCourse AS l INNER JOIN
                          CatDtl AS e ON l.EducationId = e.cgdCode AND e.cgCode = 5 INNER JOIN
                          CatDtl AS b ON l.BloodGroupId = b.cgdCode AND b.cgCode = 6 INNER JOIN
                          CatDtl AS m ON l.MartialStatusId = m.cgdCode AND m.cgCode = 7 INNER JOIN
-                         CatDtl AS a ON l.AppRankId = a.cgdCode AND a.cgCode = 14</CommandText>
+                         CatDtl AS a ON l.AppRankId = a.cgdCode AND a.cgCode = 14 INNER JOIN
+                         Batches AS ba ON l.BatchID = ba.BatchID</CommandText>
                     <Parameters />
                   </DbCommand>
                 </SelectCommand>
@@ -79,6 +80,7 @@ FROM            RecruitCourse AS l INNER JOIN
               <Mapping SourceColumn="RTU" DataSetColumn="RTU" />
               <Mapping SourceColumn="AppRankName" DataSetColumn="AppRankName" />
               <Mapping SourceColumn="AppRankId" DataSetColumn="AppRankId" />
+              <Mapping SourceColumn="BatchName" DataSetColumn="BatchName" />
             </Mappings>
             <Sources />
           </TableAdapter>
@@ -90,7 +92,7 @@ FROM            RecruitCourse AS l INNER JOIN
   <xs:element name="dsPolice" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="dsPolice" msprop:Generator_UserDSName="dsPolice">
     <xs:complexType>
       <xs:choice minOccurs="0" maxOccurs="unbounded">
-        <xs:element name="dsLadyRecruitCourse" msprop:Generator_TableClassName="dsLadyRecruitCourseDataTable" msprop:Generator_TableVarName="tabledsLadyRecruitCourse" msprop:Generator_TablePropName="dsLadyRecruitCourse" msprop:Generator_RowDeletingName="dsLadyRecruitCourseRowDeleting" msprop:Generator_RowChangingName="dsLadyRecruitCourseRowChanging" msprop:Generator_RowEvHandlerName="dsLadyRecruitCourseRowChangeEventHandler" msprop:Generator_RowDeletedName="dsLadyRecruitCourseRowDeleted" msprop:Generator_UserTableName="dsLadyRecruitCourse" msprop:Generator_RowChangedName="dsLadyRecruitCourseRowChanged" msprop:Generator_RowEvArgName="dsLadyRecruitCourseRowChangeEvent" msprop:Generator_RowClassName="dsLadyRecruitCourseRow">
+        <xs:element name="dsLadyRecruitCourse" msprop:Generator_TableClassName="dsLadyRecruitCourseDataTable" msprop:Generator_TableVarName="tabledsLadyRecruitCourse" msprop:Generator_RowChangedName="dsLadyRecruitCourseRowChanged" msprop:Generator_TablePropName="dsLadyRecruitCourse" msprop:Generator_RowDeletingName="dsLadyRecruitCourseRowDeleting" msprop:Generator_RowChangingName="dsLadyRecruitCourseRowChanging" msprop:Generator_RowEvHandlerName="dsLadyRecruitCourseRowChangeEventHandler" msprop:Generator_RowDeletedName="dsLadyRecruitCourseRowDeleted" msprop:Generator_RowClassName="dsLadyRecruitCourseRow" msprop:Generator_UserTableName="dsLadyRecruitCourse" msprop:Generator_RowEvArgName="dsLadyRecruitCourseRowChangeEvent">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="ID" msprop:Generator_ColumnVarNameInTable="columnID" msprop:Generator_ColumnPropNameInRow="ID" msprop:Generator_ColumnPropNameInTable="IDColumn" msprop:Generator_UserColumnName="ID" type="xs:int" />
@@ -333,10 +335,21 @@ FROM            RecruitCourse AS l INNER JOIN
                 </xs:simpleType>
               </xs:element>
               <xs:element name="AppRankId" msprop:Generator_ColumnVarNameInTable="columnAppRankId" msprop:Generator_ColumnPropNameInRow="AppRankId" msprop:Generator_ColumnPropNameInTable="AppRankIdColumn" msprop:Generator_UserColumnName="AppRankId" type="xs:int" />
+              <xs:element name="BatchName" msprop:Generator_ColumnVarNameInTable="columnBatchName" msprop:Generator_ColumnPropNameInRow="BatchName" msprop:Generator_ColumnPropNameInTable="BatchNameColumn" msprop:Generator_UserColumnName="BatchName" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
             </xs:sequence>
           </xs:complexType>
         </xs:element>
       </xs:choice>
     </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:dsLadyRecruitCourse" />
+      <xs:field xpath="mstns:ID" />
+    </xs:unique>
   </xs:element>
 </xs:schema>
