@@ -1767,7 +1767,10 @@ namespace GUI_Task
             {
                 foreach (Control control in controls)
                     if (control is TextBox)
+                    {
                         (control as TextBox).Enabled = true;
+                        (control as TextBox).ReadOnly = false;
+                    }
                     else if (control is CheckBox)
                         (control as CheckBox).Enabled = true;
                     else if (control is ComboBox)

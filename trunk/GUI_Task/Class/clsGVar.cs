@@ -23,8 +23,8 @@ namespace GUI_Task
         //public const string DbName1 = "NORTHWIND";
         //public const string gServerId1 = "(local)";
         //public const string gServerId1 = @"TEAMWIN7S\TEAMWIN7S";    // did not work from local and remote computer
-        //public const string ServerName1 = @"(Local)";    //  @"TEAMWIN7S"
-        public const string ServerName1 = "DIG";    //  @"TEAMWIN7S"      
+        public const string ServerName1 = @"(Local)";    //  @"TEAMWIN7S"
+        //public const string ServerName1 = "DIG";    //  @"TEAMWIN7S"      
         //public const string ServerName1 = "Win2K8SVR";    //  @"TEAMWIN7S"    
         //public const string gServerId1 = "TOSHIBA2008EP";
         public const string ConString1 = "Data Source= " + ServerName1 + ";Initial Catalog=" + DbName1 + ";User ID=" + UserName1 + "; Password=" + Pwd1;
